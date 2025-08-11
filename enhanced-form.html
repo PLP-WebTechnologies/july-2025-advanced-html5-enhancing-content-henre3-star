@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhanced HTML5 form with lists, tables, media, and semantic layout.">
+    <title>Enhanced HTML5 Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        header, main, footer {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        form {
+            display: grid;
+            gap: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea, button {
+            padding: 8px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced Form</h1>
+    <p>Please fill out the form below. Fields marked with * are required.</p>
+</header>
+
+<main>
+    <section>
+        <h2>About This Form</h2>
+        <ul>
+            <li>Uses various HTML5 input types</li>
+            <li>Includes attributes like <code>placeholder</code>, <code>required</code>, <code>autocomplete</code>, and <code>readonly</code></li>
+            <li>Features a table and an image</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sample Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>Database</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Sample Media</h2>
+        <img src="https://via.placeholder.com/600x200" alt="Sample banner" style="max-width: 100%;">
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form>
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name">
+
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required autocomplete="tel">
+
+            <label for="country">Country *</label>
+            <select id="country" name="country" required>
+                <option value="">--Select Country--</option>
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="tanzania">Tanzania</option>
+            </select>
+
+            <label for="username">Username (Read-only Example)</label>
+            <input type="text" id="username" value="@henryotieno" readonly>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced Form Project</p>
+</footer>
+
+</body>
+</html>
